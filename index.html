@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Пекарня СИБТЭК</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#efe2d5">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<3b140827-3adf-40f1-a8e6-f42dc13f8f39>" type="text/javascript"></script>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <div class="header__inner">
+            <div class="header__logo-box">
+                <div class="header__logo logo" id="logo">
+                    <img src="./images/header/1.png" alt="СИБТЭК" class="logo__img">
+                </div>
+            </div>
+            <div class="header__content">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="./about.html" class="header__link" target="_blank">О пекарне</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./catalog.html" class="header__link" target="_blank">Каталог</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./contacts.html" class="header__link" target="_blank">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <a href="#!" class="header__tel">+7 (123) 456-78-89</a>
+                    <p class="header__time">
+                        Пн-вс с 10:00 до 20.00
+                    </p>
+                </div>
+            </div>
+
+            <div class="header__nav-close">
+                <span class="header__nav-line"></span>
+                <span class="header__nav-line"></span>
+            </div>
+
+            <div class="header__burger burger">
+                <span class="burger__line burger__line_first"></span>
+                <span class="burger__line burger__line_second"></span>
+                <span class="burger__line burger__line_third"></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="intro" id="intro">
+        <div class="wrapper">
+            <div class="intro_inner">
+                <h1 class="intro_title" data-aos="fade-right">пекарня сибтэк</h1>
+                <h2 class="intro_suptitle" data-aos="fade-right" data-aos-delay="100">
+                    СИБТЭК - это всегда свежая и вкусная выпечка высшего качества.
+                </h2>
+                <a class="btn intro__btn" href="./catalog.html" target="_blank" data-aos="fade-right" data-aos-delay="200">перейти в каталог</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="tours scroll_section" id="articles">
+        <div class="wrapper">
+            <div class="tours__tour tour">
+                <div class="tour__pic"  data-aos="fade-right">
+                    <img class="tour__thumb" src="./images/about/about.jpg" alt="ООО «СИБТЭК»">
+                </div>
+                <div class="tour__info" data-aos="fade-left">
+                    <p class="tour__desc">ООО «СИБТЭК» — это современное предприятие, предлагающее 
+                        потребителю широкий ассортимент мучных изделий. 
+                    </p>
+                    <p class="tour__desc">ООО «СИБТЭК» — это место, где покупатели могут 
+                        приобрести свежую выпечку по привлекательным ценам. 
+                        Мы гарантируем высокое качество и абсолютную свежесть продукции.
+                    </p>
+                    <a href="./about.html" target="_blank" class="btn tour__link">Узнать больше о пекарне</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="places">
+        <div class="wrapper">
+            <h2 class="places__title title" data-aos="fade-up">Каталог</h2>
+            <div class="places__cards">
+                <div class="places__card places__card_large"  data-aos="zoom-in">
+                    <img class="places__card-pic"  src="./images/catalog/one.jpg"  alt="">
+                    <a href="./catalog.html" target="_blank"  class="places__card-link"></a>
+                    <div class="places__card-info">
+                        <h3 class="places__card-title">Название</h3>
+                        <a class="btn btn__card-places" href="./catalog.html" target="_blank" >Посмотреть меню</a>
+                    </div>
+                    <div class="places__hover"></div>
+                </div>
+                <div class="places__card places__card_large"  data-aos="zoom-in">
+                    <img class="places__card-pic" src="./images/catalog/one.jpg"  alt="">
+                    <a href="./catalog.html" target="_blank"  class="places__card-link"></a>
+                    <div class="places__card-info">
+                        <h3 class="places__card-title">Название</h3>
+                        <a class="btn btn__card-places" href="./catalog.html" target="_blank">Посмотреть меню</a>
+                    </div>
+                    <div class="places__hover"></div>
+                </div>
+                <div class="places__card places__card_large"  data-aos="zoom-in">
+                    <img class="places__card-pic"  src="./images/catalog/one.jpg""  alt="">
+                    <a href="./catalog.html" target="_blank"  class="places__card-link"></a>
+                    <div class="places__card-info">
+                        <h3 class="places__card-title">Название</h3>
+                        <a class="btn btn__card-places" href="./catalog.html" target="_blank" >Посмотреть меню</a>
+                    </div>
+                    <div class="places__hover"></div>
+                </div>
+                <div class="places__card places__card_large"  data-aos="zoom-in">
+                    <img class="places__card-pic"  src="./images/catalog/one.jpg"  alt="">
+                    <a href="./catalog.html" target="_blank"  class="places__card-link"></a>
+                    <div class="places__card-info">
+                        <h3 class="places__card-title">Название</h3>
+                        <a class="btn btn__card-places" href="./catalog.html" target="_blank" >Посмотреть меню</a>
+                    </div>
+                    <div class="places__hover"></div>
+                </div>
+                <div class="places__card places__card_large"  data-aos="zoom-in">
+                    <img class="places__card-pic" src="./images/catalog/one.jpg" alt="">
+                    <a href="./catalog.html" target="_blank"  class="places__card-link"></a>
+                    <div class="places__card-info">
+                        <h3 class="places__card-title">Название</h3>
+                        <a class="btn btn__card-places" href="./catalog.html" target="_blank" >Посмотреть меню</a>
+                    </div>
+                    <div class="places__hover"></div>
+                </div>
+                <div class="places__card places__card_large"  data-aos="zoom-in">
+                    <img class="places__card-pic"  src="./images/catalog/one.jpg"  alt="">
+                    <a href="./catalog.html" target="_blank"  class="places__card-link"></a>
+                    <div class="places__card-info">
+                        <h3 class="places__card-title">Название</h3>
+                        <a class="btn btn__card-places" href="./catalog.html" target="_blank" >Посмотреть меню</a>
+                    </div>
+                    <div class="places__hover"></div>
+                </div>
+            </div>
+            <div class="places__box-btn">
+                <a class="btn btn__places" href="./catalog.html" target="_blank" >перейти в каталог</a> 
+            </div>     
+        </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+        <div class="wrapper">
+            <h2 class="title advantages__title" data-aos="fade-up">Наши преимущества</h2>
+            <div class="advantages__item">
+                <div class="advantages__item__pic" data-aos="fade-right">
+                    <img class="advantages__item__thumb" src="./images/advatanges/4.jpg" alt="Качественные ингредиенты">
+                </div>
+                <div class="advantages__item__info" data-aos="fade-left">
+                    <h3 class="advantages__item__title">Качественные ингредиенты</h3>
+                    <p class="advantages__item__desc">Весь хлеб и выпечка в Хлебнице изготавливаются вручную на основе муки из тщательно отобранной пшеницы и содержат только натуральные ингредиенты.
+                    </p>
+                </div>
+            </div>
+            <div class="advantages__item ">
+                <div class="advantages__item__info" data-aos="fade-right">
+                    <h3 class="advantages__item__title">Внимание к каждой детали</h3>
+                    <p class="advantages__item__desc">Мы уделяем внимание каждой детали в работе, начиная от закупки сырья и заканчивая настроением покупателя.
+
+                        Каждый этап работы проходит строгую проверку: только свежие и качественные продукты, только современное и первоклассное оборудование, только высококвалифицированный персонал и удовлетворенный покупатель. 
+                    </p>
+                </div>
+                <div class="advantages__item__pic advantages__item__pic--even" data-aos="fade-left">
+                    <img class="advantages__item__thumb" src="./images/advatanges/2.jpg" alt="Внимание к каждой детали">
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item__pic" data-aos="fade-right">
+                    <img class="advantages__item__thumb" src="./images/advatanges/1.jpg" alt="Внимательные сотрудники">
+                </div>
+                <div class="advantages__item__info" data-aos="fade-left">
+                    <h3 class="advantages__item__title">Внимательные сотрудники</h3>
+                    <p class="advantages__item__desc">Каждый сотрудник заботится о качественном выполнении своей работы, внимательно относится к соблюдению стандартов производства и продаж, а также старается создать уютную атмосферу в наших пекарнях.
+
+                        Наша цель — это довольный и сытый покупатель! 
+                    </p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item__info" data-aos="fade-right">
+                    <h3 class="advantages__item__title">Прислушиваемся к каждому совету и рекомендации</h3>
+                    <p class="advantages__item__desc">Мы внимательно относимся к отзывам, советам и рекомендациям, которые поступают от наших Гостей и партнёров.
+
+                        Мы всегда стараемся решить все возникающие проблемы в короткие сроки, и это помогает нам совершенствовать нашу работу и становиться лучше.
+                    </p>
+                </div>
+                <div class="advantages__item__pic advantages__item__pic--even" data-aos="fade-left">
+                    <img class="advantages__item__thumb" src="./images/advatanges/3.jpg" alt="Прислушиваемся к каждому совету и рекомендации">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="top scroll_section" id="traditions">
+        <div class="wrapper">
+            <h2 class="title top__title" data-aos="fade-up">Традиции во всем</h2>
+            <div class="top__cards">
+                <div class="top__card" data-aos="fade-up">
+                    <div class="top__card-pic">
+                        <img class="top__card-thumb top__card-thumb--low" src="./images/traditions/cookie.png" alt="Традиционные рецепты">
+                    </div>
+                    <h3 class="top__card-title" >Традиционные рецепты</h3>
+                    <p class="top__card-desc">
+                        СИБТЭК соединяет традиции с передовыми технологиями. 
+                        Пекарня успешно развивается за счет внедрения новых передовых 
+                        технологий и использования современного оборудования.
+                        Мы постоянно экспериментируем, 
+                        собираем лучшие рецепты всех времен, чтобы удивляться и удивлять вас!
+                    </p>
+                </div>
+                <div class="top__card" data-aos="fade-up">
+                    <div class="top__card-pic">
+                        <img class="top__card-thumb top__card-thumb--low" src="./images/traditions/dough.png" alt="Натуральные продукты">
+                    </div>
+                    <h3 class="top__card-title">Натуральные продукты</h3>
+                    <p class="top__card-desc">
+                        При приготовлении не используются добавки, 
+                        улучшители, консерванты. При этом, значительная 
+                        часть продукции традиционно изготавливаются вручную.
+                         Для того, чтобы «здесь и сейчас» приготовить вашу 
+                         любимую продукцию, мы отбираем лучшее сырье. В 
+                         этом заключается главный секрет 100% качества.
+                    </p>
+                </div>
+                <div class="top__card top__card--transform" data-aos="fade-up">
+                    <div class="top__card-pic">
+                        <img class="top__card-thumb top__card-thumb--low" src="./images/traditions/cookie2.png" alt="Новые вкусы">
+                    </div>
+                    <h3 class="top__card-title">Новые вкусы</h3>
+                    <p class="top__card-desc">
+                        Аромат выпечки, вкус печенья и 
+                        ваши довольные улыбки делают нас счастливыми. В
+                         нашей команде работают профессионалы, которых 
+                         объединяет любовь к своему делу. 
+                    </p>
+                </div>
+                <div class="top__card" data-aos="fade-up" >
+                    <div class="top__card-pic">
+                        <img class="top__card-thumb" src="./images/traditions/milk.png" alt="Натуральное молоко">
+                    </div>
+                    <h3 class="top__card-title">Натуральное молоко</h3>
+                    <p class="top__card-desc">
+                        Для наших изделий мы используем чистое, натуральное молоко, 
+                        богатое кальцием и минералами, без антибиотиков и консервантов. 
+                        Поставщики – местные фермеры
+                    </p>
+                </div>
+                
+                <div class="top__card" data-aos="fade-up">
+                    <div class="top__card-pic">
+                        <img class="top__card-thumb top__card--flour" src="./images/traditions/flour.png" alt="Мука высшего сорта">
+                    </div>
+                    <h3 class="top__card-title">Мука высшего сорта</h3>
+                    <p class="top__card-desc">
+                        Мы используем муку, приготовленную только из зерна 
+                        высшего класса. Это позволяет ей отличаться превосходными 
+                        хлебопекарными качествами.
+                    </p>
+                </div>
+                <div class="top__card" data-aos="fade-up">
+                    <div class="top__card-pic">
+                        <img class="top__card-thumb" src="./images/traditions/egg.png" alt="Яйца первой категории">
+                    </div>
+                    <h3 class="top__card-title">Яйца первой категории</h3>
+                    <p class="top__card-desc">
+                        Мы берем яйца для выпечки только первой категории. Получаем от 
+                        несушек, которые питаются экологически чистыми кормами, 
+                        содержащими витамины и минеральные добавки
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials section" id="testimonials">
+        <div class="testimonials__bg"></div>
+        <div class="wrapper">
+            <h2 class="title testimonials__title" data-aos="fade-up">
+                Отзывы
+            </h2>
+            <div class="testimonials__content">
+                <img src="./images/testimonials/left.svg" alt="" class="testimonials__img testimonials__img--left">
+                <div class="testimonials__slider">
+                    <div class="testimonials__inner active">
+                        <div class="testimonials__autor" data-aos="fade-up">Артур Е.</div>
+                        <div class="testimonials__text" data-aos="fade-up">"Постоянно брал тут выпечку, когда работал рядом. 
+                            Печенье – моё почтение, очень вкусно.  Вся выпечка здесь
+                            оставила очень приятные впечатления. 
+                            Жаль что рядом с нынешней работой нет этой пекарни."</div>
+                        <div class="testimonials__date" data-aos="fade-up">19 октября 2022</div>
+                        <div class="dots">
+                            <div class="dot selected"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+            
+                    <div class="testimonials__inner">
+                        <div class="testimonials__autor" data-aos="fade-up">Виктория К.</div>
+                        <div class="testimonials__text" data-aos="fade-up">"Очень рада, что в
+                            нашем городе появилась такая пекарня. Каждый день свежая выпечка, а 
+                            печенье лучшее в нашем городе!"</div>
+                        <div class="testimonials__date" data-aos="fade-up">13 мая 2023</div>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot selected"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+            
+                    <div class="testimonials__inner">
+                        <div class="testimonials__autor" data-aos="fade-up">Евгений М.</div>
+                        <div class="testimonials__text" data-aos="fade-up">"Огромный выбор выпечки и печенья. 
+                            Уютно. Цены приятно поражают. 
+                            Вкусно и хорошее обслуживание."</div>
+                        <div class="testimonials__date" data-aos="fade-up">18 декабря 2021</div>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot selected"></div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/testimonials/right.svg" alt="" class="testimonials__img testimonials__img--right">
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="location" id="location">
+        <h2 class="title location__title" data-aos="fade-up">
+            Местоположение
+        </h2>
+        <div class="location__map" id="map"></div>
+    </div>
+
+    <section class="contacts">
+        <div class="contacts__bg"></div>
+        <div class="wrapper">
+            <h2 class="contacts__title title" data-aos="fade-up">Контакты</h2>
+            <div class="contacts_inner">
+
+                <div class="contacts_block" data-aos="fade-up">
+                    <img class="contacts__icon" alt="КОНТАКТЫ" src="./images/footer/phone.svg">
+                    <h4 class="contacts_title">КОНТАКТЫ</h4>
+                    <div class="contacts_text">
+                        <a href="#!" class="contacts__tel">+7 (123) 456-78-89</a>
+                    </div>
+                </div>
+
+                <div class="contacts_block" data-aos="fade-up">
+                    <img class="contacts__icon" alt="АДРЕС" src="./images/footer/map.svg">
+                    <h4 class="contacts_title">АДРЕС</h4>
+                    <address class="contacts_text">
+                        <ul>
+                            <li>г. Новосибирск, ул. Ключ-Камышенское плато, д. 14/1, офис 175. </li>
+                            <li> Новосибирская область, с. Новолуговое, ул. Андреева, д. 2а.</li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="contacts_block " data-aos="fade-up">
+                    <img class="contacts__icon" alt="ВРЕМЯ РАБОТЫ" src="./images/footer/clock.svg">
+                    <h4 class="contacts_title">ВРЕМЯ РАБОТЫ</h4>
+                    <div class="contacts_text">
+                        <p>Пн-вс с 10:00 до 20.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="wrapper">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="./about.html" class="footer__link" target="_blank">о пекарне</a>
+                </li>
+                <li class="footer__item">
+                    <a href="./catalog.html" class="footer__link" target="_blank">каталог</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#advantages" class="footer__link" target="_blank">наши преимущества</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#traditions" class="footer__link" target="_blank">наши традиции</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#testimonials" class="footer__link" target="_blank">отзывы</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#location" class="footer__link" target="_blank">местоположение</a>
+                </li>
+                <li class="footer__item">
+                    <a href="./contacts.html" class="footer__link" target="_blank">контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="copyright ">
+        <div class="container">
+            <div class="copyright__text">
+                © ООО «СИБТЭК». 2016 - 2023. Все права защищены.
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+
+    AOS.init({
+
+    disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', 
+    initClassName: 'aos-init', 
+    animatedClassName: 'aos-animate', 
+    useClassNames: false, 
+    disableMutationObserver: false, 
+    debounceDelay: 50, 
+    throttleDelay: 99, 
+    
+    offset: 100, 
+    delay: 0, 
+    duration: 800, 
+    easing: 'ease', 
+    once: true, 
+    mirror: false, 
+    anchorPlacement: 'top-bottom', 
+
+    });
+</script>
+<script src="./js/main.js"></script>
+</body>
+</html>
