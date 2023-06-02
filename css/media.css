@@ -53,6 +53,10 @@
     grid-column: span 3;
 }
 
+.places__card--center {
+    grid-column: span 6;
+}
+
 
 /* advantages */
 
@@ -296,6 +300,11 @@
     -ms-grid-column-span: 6;
     grid-column: span 6;
 }
+
+.places__card--center {
+    grid-column: span 6;
+    justify-self: auto;
+  }
 
 .btn__places {
     width: 100%;

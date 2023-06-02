@@ -623,6 +623,12 @@ body {
     grid-column: span 2;
     height: 283px;
 }
+
+.places__card--center {
+  justify-self: center;
+  grid-column: span 6;
+}
+
 .places__card::after {
     display: block;
     content: "";
@@ -632,7 +638,7 @@ body {
     z-index: 2;
     height: 100%;
     width: 100%;
-    background-color: rgba(21, 24, 36, 0.4);
+    background-color: rgba(21, 24, 36, 0.3);
 }
 
 .places__card::before {
