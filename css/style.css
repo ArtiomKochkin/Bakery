@@ -158,6 +158,9 @@ body {
     color: var(--dark);
     background: #f5ebeb;
 }
+.no-scroll {
+    overflow: hidden;
+}
 
 .wrapper {
     max-width: 1200px;

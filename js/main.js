@@ -33,16 +33,19 @@
     const burger = document.querySelector(".burger");
     const menu = document.querySelector(".header__content");
     const menuCloseItem = document.querySelector(".header__nav-close");
+    const body = document.querySelector(".body");
 
     burger.addEventListener("click", () => {
         menu.classList.add("header__nav_active");
         menuCloseItem.style.display = "block";
         burger.style.display = "none";
+        body.classList.add("no-scroll");
     });
     menuCloseItem.addEventListener("click", () => {
         menu.classList.remove("header__nav_active");
         menuCloseItem.style.display = "none";
         burger.style.display = "block";
+        body.classList.remove("no-scroll");
     });
 }());
 

@@ -22,16 +22,19 @@
   const burger = document.querySelector(".burger");
   const menu = document.querySelector(".header__content");
   const menuCloseItem = document.querySelector(".header__nav-close");
+  let body = document.querySelector(".body");
 
   burger.addEventListener("click", () => {
       menu.classList.add("header__nav_active");
       menuCloseItem.style.display = "block";
       burger.style.display = "none";
+      body.classList.add("no-scroll");
   });
   menuCloseItem.addEventListener("click", () => {
       menu.classList.remove("header__nav_active");
       menuCloseItem.style.display = "none";
       burger.style.display = "block";
+      body.classList.remove("no-scroll");
   });
 }());
 
@@ -45,6 +48,7 @@ let imageDefault = document.querySelector(".catalog__item__thumb");
 let titleDefault = document.querySelector(".catalog__item__title");
 let descriptionDefault = document.querySelector(".catalog__item__desc");
 let priceDefault = document.querySelector(".catalog__price");
+let body = document.querySelector(".body")
 
 cards.forEach(function(item) {
   item.addEventListener("click", function() {
@@ -60,6 +64,7 @@ cards.forEach(function(item) {
     priceDefault.innerHTML = price;
 
     modalWindow.style.display = "block";
+    body.classList.add("no-scroll");
   });
 });
 
@@ -67,6 +72,7 @@ cards.forEach(function(item) {
 close.forEach(function(item) {
   item.onclick = function() {
     modalWindow.style.display = "none";
+    body.classList.remove("no-scroll");
   }
 });
 
@@ -74,5 +80,6 @@ close.forEach(function(item) {
 window.onclick = function(event) {
   if(event.target == modalWindow) {
       modalWindow.style.display = "none";
+      body.classList.remove("no-scroll");
   }
 }
