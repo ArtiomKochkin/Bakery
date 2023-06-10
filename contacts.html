@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/media.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<3b140827-3adf-40f1-a8e6-f42dc13f8f39>" type="text/javascript"></script>
 </head>
 <body class="body">
@@ -73,7 +72,7 @@
     </div>
 
     <div class="location location--page">
-        <h2 class="title location__title" data-aos="fade-up">
+        <h2 class="title location__title" >
             Местоположение
         </h2>
         <div class="location__map" id="map"></div>
@@ -82,10 +81,10 @@
     <section class="contacts">
         <div class="contacts__bg"></div>
         <div class="wrapper">
-            <h2 class="contacts__title title" data-aos="fade-up">Контакты</h2>
+            <h2 class="contacts__title title" >Контакты</h2>
             <div class="contacts_inner">
 
-                <div class="contacts_block" data-aos="fade-up">
+                <div class="contacts_block" >
                     <img class="contacts__icon" alt="КОНТАКТЫ" src="./images/footer/phone.svg">
                     <h4 class="contacts_title">КОНТАКТЫ</h4>
                     <div class="contacts_text">
@@ -93,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="contacts_block" data-aos="fade-up">
+                <div class="contacts_block" >
                     <img class="contacts__icon" alt="АДРЕС" src="./images/footer/map.svg">
                     <h4 class="contacts_title">АДРЕС</h4>
                     <address class="contacts_text">
@@ -104,7 +103,7 @@
                     </address>
                 </div>
 
-                <div class="contacts_block " data-aos="fade-up">
+                <div class="contacts_block ">
                     <img class="contacts__icon" alt="ВРЕМЯ РАБОТЫ" src="./images/footer/clock.svg">
                     <h4 class="contacts_title">ВРЕМЯ РАБОТЫ</h4>
                     <div class="contacts_text">
@@ -154,33 +153,6 @@
     </div>
 
 </footer>
-    
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-
-
-    AOS.init({
-
-    disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    startEvent: 'DOMContentLoaded', 
-    initClassName: 'aos-init', 
-    animatedClassName: 'aos-animate', 
-    useClassNames: false, 
-    disableMutationObserver: false, 
-    debounceDelay: 50, 
-    throttleDelay: 99, 
-    
-    offset: 100, 
-    delay: 0, 
-    duration: 800, 
-    easing: 'ease', 
-    once: true, 
-    mirror: false, 
-    anchorPlacement: 'top-bottom', 
-
-    });
-</script>
 <script src="./js/contacts.js"></script>
 </body>
 </html>
