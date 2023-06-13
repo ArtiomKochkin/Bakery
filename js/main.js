@@ -77,7 +77,7 @@ function init() {
        
     myMap.geoObjects
         .add(new ymaps.Placemark([54.981133, 83.101503], {
-            balloonContent: 'Производственное подразделение. Ул. андреева, д. 2а',
+            balloonContent: 'Производственное подразделение. Ул. Андреева, д. 2а',
             iconCaption: 'ООО «СИБТЭК»'
         }, {
             preset: 'islands#icon',
